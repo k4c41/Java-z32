@@ -1,0 +1,47 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_siejka()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<form>
+<textarea name="nazwa" cols="80" rows="32" readonly>
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function wiezowiec(ile_pieter_k,kolor_k,lokalizacja_k)//początek konstruktora 
+  { 
+   this.ile_pieter=ile_pieter_k; 
+   this.kolor=kolor_k; 
+   this.lokalizacja=lokalizacja_k;   
+  }//koniec konstruktora 
+              wiezowiec.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.ile_pieter + ' ' + this.kolor+ ' ' + this.lokalizacja); 
+      }; 
+  var wiezowiec1 = new wiezowiec("10", "Biały", "Jasień"); // nowy obiekt osoba1 
+  var wiezowiec2 = new wiezowiec('15', 'Niebieski', 'Gdańsk'); 
+  wiezowiec1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
+  wiezowiec2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól osoby1 
+     document.write("wiezowiec pierwszy"+"   "+wiezowiec1.ile_pieter+"   "+wiezowiec1.kolor+"   "+wiezowiec1.lokalizacja); 
+     
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html> 
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

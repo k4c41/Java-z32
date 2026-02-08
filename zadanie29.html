@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 29 - Odpowiedzi</title>
+</head>
+<body>
+
+<h1>1. W jaki sposób można określić właściwość danego obiektu?</h1>
+<h1>Odpowiedź:</h1>
+<p>Sposób 1:</p>
+<ul>
+    <li>Używając kropki: <br>
+        <code>auto.marka = "Opel Omega";</code> (tekst)<br>
+        <code>auto.rok = 1996;</code> (liczba)<br>
+        <code>auto.cena = 25000;</code> (liczba)
+    </li>
+</ul>
+<p>Sposób 2:</p>
+<ul>
+    <li>Używając nawiasów kwadratowych: <br>
+        <code>auto["cena"] = 25000;</code>
+    </li>
+</ul>
+
+<h1>2. W jaki sposób można odwołać się do pól (właściwości) i metod?</h1>
+<h1>Odpowiedź:</h1>
+<p>Do pól i metod odwołujemy się jak do zwykłych zmiennych/funkcji, ale poprzedzamy nazwą obiektu i kropką:</p>
+<code>console.log(samochod1.kolor);</code>
+
+<h1>3. Cechy charakterystyczne konstruktora</h1>
+<h1>Odpowiedź:</h1>
+<ul>
+    <li>Wywoływany automatycznie podczas tworzenia obiektu.</li>
+    <li>Nazywa się tak samo jak klasa.</li>
+    <li>Nie zwraca wartości.</li>
+    <li>Może przyjmować argumenty do ustawienia właściwości obiektu.</li>
+</ul>
+
+<h1>4. Konstruowanie obiektu (3 pola i 1 metoda)</h1>
+<h1>Odpowiedź:</h1>
+<pre>
+var osoba_1 = {
+    nazwisko: 'Kowalski',
+    imie: 'Jan',
+    zawod: 'piekarz',
+    wyswietl: function() {
+        document.write(this.nazwisko + ' ' + this.imie);
+    }
+}
+</pre>
+
+<h1>5. Znaczenie słowa this i oddzielanie pól i metod</h1>
+<h1>Odpowiedź:</h1>
+<p><b>this</b> – pozwala odwołać się do pola lub metody obiektu z wnętrza tego obiektu.<br>
+Pola i metody w obrębie obiektu oddzielamy przecinkami.</p>
+
+<h1>6. Konstruktor w JS (przykład)</h1>
+<h1>Odpowiedź:</h1>
+<pre>
+function klient(nazwisko_k, imie_k, zawod_k) {
+    this.nazwisko = nazwisko_k;
+    this.imie = imie_k;
+    this.zawod = zawod_k;
+
+    this.wypisz = function() {
+        alert(this.nazwisko + ' ' + this.imie);
+    }
+}
+</pre>
+
+<h1>7. Znaczenie słowa kluczowego new (przykład)</h1>
+<h1>Odpowiedź:</h1>
+<p>Tworzy nowy obiekt na podstawie konstruktora:</p>
+<pre>
+var osoba1 = new klient('Kowalski', 'Jan', 'kierowca');
+var osoba2 = new klient('Nowak', 'Anna', 'sekretarka');
+</pre>
+
+<h1>8. Znaczenie słowa kluczowego prototype (przykład)</h1>
+<h1>Odpowiedź:</h1>
+<p><b>prototype</b> – pozwala dodać metody i właściwości do wszystkich obiektów utworzonych na podstawie konstruktora.</p>
+<pre>
+function klient() {
+    this.nazwisko = 'Bielski';
+    this.imie = 'Paweł';
+}
+klient.prototype.pisz_dane = function() {
+    document.write(this.nazwisko + ' ' + this.imie);
+}
+klient.prototype.zawod = 'kierowca';
+
+var osoba1 = new klient();
+osoba1.pisz_dane(); // wypisze "Bielski Paweł"
+</pre>
+<p>Dzięki prototype każdy nowo utworzony obiekt klient będzie miał metodę <b>pisz_dane</b> i właściwość <b>zawod</b>.</p>
+
+</body>
+</html>

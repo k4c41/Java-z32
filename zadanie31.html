@@ -1,0 +1,33 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+                 var wiezowiec = { 
+   ile_pieter: '20', 
+   kolor: 'Szary', 
+   lokalizacja: 'Skowarcz', 
+   pokaz: function () 
+     { 
+        document.write("Ile Pięter" + "&nbsp " + this.ile_pieter + "<br>" + "kolor" + "&nbsp " + this.kolor + "&nbsp" + "<br>" + "lokalizacja" + "&nbsp" + this.lokalizacja)
+     } 
+  } 
+  wiezowiec.pokaz(); 
+  wiezowiec.recepcje=1; 
+  wiezowiec.wypisz=function() {alert('Recepcja: ' + this.recepcje)} 
+  wiezowiec.wypisz(); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+    Programowanie obiektowe. <br> 
+     Obiekt  to  wiezowiec<br> 
+     Pola:<br>
+     ile_pieter: 20<br> 
+     kolor<br> 
+     lokalizacja<br> 
+     metoda:  pokaz<br> 
+     Nowe pole (poza ciałem obiektu):<br>
+     recepcja<br><br>
+     Nowa metoda:<br>
+     wiezowiec.wypisz()<br>
+</body> 
+</html> 
