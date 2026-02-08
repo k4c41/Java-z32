@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_siejka()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<form>
+<textarea name="nazwa" cols="80" rows="32" readonly>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function pole_Lapacz() 
+   { 
+ var a_lap= parseFloat(document.getElementById('dlugosc').value); 
+ var b_lap= a_lap*a_lap; 
+        document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_lap.toFixed(2)+" cm^2";  
+   } 
+  function obwod_Lapacz() 
+   { 
+ var a_lap= parseFloat(document.getElementById('dlugosc').value); 
+ var b_lap= 4*a_lap; 
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_lap.toFixed(2)+" cm";  
+   } 
+ </script> 
+  <h1>Wszystko o KWADRACIE</h1><br><br> 
+  Podaj długość boku: <input type="text" id="dlugosc" value=""> cm<br><br><br> 
+  <input type="button" name="pole" value="Oblicz pole" Onclick="pole_Lapacz()"><br><br> 
+  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_Lapacz()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html> 
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

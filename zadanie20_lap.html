@@ -1,0 +1,51 @@
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+
+  function AB_lap() 
+   { 
+ var a_x = parseFloat(document.getElementById('a_x').value);
+ var a_y = parseFloat(document.getElementById('a_y').value);
+ var b_x = parseFloat(document.getElementById('b_x').value);
+ var b_y = parseFloat(document.getElementById('b_y').value);
+
+ var AB= Math.sqrt(Math.pow(a_x - b_x,2) + Math.pow(a_y - b_y,2))
+        document.getElementById("nazwa").innerHTML ="OdległośćAB="+AB.toFixed(2);  
+   } 
+   function BC_lap() 
+   { 
+ var c_x = parseFloat(document.getElementById('c_x').value);
+ var c_y = parseFloat(document.getElementById('c_y').value);
+ var b_x = parseFloat(document.getElementById('b_x').value);
+ var b_y = parseFloat(document.getElementById('b_y').value);
+
+ var BC= Math.sqrt(Math.pow(b_x - c_x,2) + Math.pow(b_y - c_y,2))
+        document.getElementById("nazwa").innerHTML ="OdległośćBC="+BC.toFixed(2);  
+   } 
+     function AC_lap() 
+   { 
+ var a_x = parseFloat(document.getElementById('a_x').value);
+ var a_y = parseFloat(document.getElementById('a_y').value);
+ var c_x = parseFloat(document.getElementById('c_x').value);
+ var c_y = parseFloat(document.getElementById('c_y').value);
+
+ var AC= Math.sqrt(Math.pow(a_x - c_x,2) + Math.pow(a_y - c_y,2))
+        document.getElementById("nazwa").innerHTML ="OdległośćAC="+AC.toFixed(2);  
+   } 
+ </script> 
+  Podaj wartość a x: <input type="text" id="a_x" value=""> <br><br><br>
+  Podaj wartość a y: <input type="text" id="a_y" value=""> <br><br><br> 
+  Podaj wartość b x: <input type="text" id="b_x" value=""> <br><br><br> 
+  Podaj wartość b y: <input type="text" id="b_y" value=""> <br><br><br> 
+  Podaj wartość c x: <input type="text" id="c_x" value=""> <br><br><br> 
+ Podaj wartość c y: <input type="text" id="c_y" value=""> <br><br><br> 
+  <input type="button" name="AB_lap" value="Oblicz długość pomiędzy A i B" onclick="AB_lap()"><br><br> 
+  <input type="button" name="BC_lap" value="Oblicz długość pomiędzy B i C" onclick="BC_lap()"><br><br>
+  <input type="button" name="AC_lap" value="Oblicz długość pomiędzy A i C" onclick="AC_lap()"><br><br>
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html> 

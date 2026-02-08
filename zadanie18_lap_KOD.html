@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_siejka()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<form>
+<textarea name="nazwa" cols="80" rows="38" readonly>
+<!DOCTYPE html>   
+    <head>    
+        <title> Użycie fukcji </title>    
+        <meta charset="utf-8">  
+    </head>  
+    <body> 
+        <div style="color:navy;font-size:50px;"> 
+        <script language="JavaScript"> 
+            var a=parseFloat(prompt("a=","")); 
+            var b=parseFloat(prompt("b=","")); 
+            function suma_lap(a, b) { 
+            return a + b; 
+            } 
+            function odejmowanie_lap(a,b) {
+            return a - b;
+            }
+            function mnozenie_lap(a,b) {
+            return a * b;
+            }
+            function dokwadratu_lap(a,b) {
+            return Math.pow(a,b);
+            }
+            function resztazdzielenie_lap(a,b) {
+            return a % b;
+            }
+
+            document.write("suma="+suma_lap(a,b)+"<br>");
+            document.write("odejmowanie="+odejmowanie_lap(a,b)+"<br>"); 
+            document.write("mnozenie="+mnozenie_lap(a,b)+"<br>");
+	    document.write("kwadrat="+dokwadratu_lap(a,b)+"<br>");
+            document.write("reszta z dzielenia="+resztazdzielenie_lap(a,b)+"<br>"); 
+
+        </script> 
+    </div> 
+    </body> 
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

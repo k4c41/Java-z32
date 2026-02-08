@@ -1,0 +1,78 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_siejka()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<form>
+<textarea name="nazwa" cols="80" rows="67" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 17</title>
+</head>
+<body>
+
+<h2>1.Wymień cztery sposoby wyprowadzania danych w JS</h2>
+<ul>
+    <li><b><u>document.write()</u></b> – wyprowadzanie danych bezpośrednio na stronę.</li>
+    <li><b><u>alert()</u></b> – wyświetlanie danych w okienku dialogowym.</li>
+    <li><b><u>Wyprowadzanie do okienek formularza</u></b> – ustawianie wartości pól.</li>
+    <li><b><u>Wyprowadzanie danych do tabeli</u></b> – wpisywanie danych do komórek.</li>
+</ul>
+
+<h2>2.Czym jest funkcja w JS?</h2>
+<ul>
+    <li><b><u>Funkcja to zbiór instrukcji</u></b>, które uruchamiamy przez podanie jej nazwy.</li>
+    <li><b><u>Po wywołaniu funkcja wykonuje swój kod</u></b>.</li>
+    <li><b><u>Funkcja może mieć argumenty</u></b>, które są przetwarzane w jej wnętrzu.</li>
+    <li><b><u>Funkcja może zwrócić wartość</u></b> poprzez słowo kluczowe <i>return</i>.</li>
+</ul>
+
+<h2>3.Omów metody: getElementsByName, getElementById, getElementsByTagName</h2>
+
+<table>
+<tr>
+    <th>Metoda</th>
+    <th>Opis</th>
+</tr>
+<tr>
+    <td><b>getElementById("id")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+    <td>Dostęp do jednego elementu o podanym identyfikatorze <b>id</b>.</td>
+</tr>
+<tr>
+    <td><b>getElementsByTagName("znacznik")</b></td>
+    <td>Dostęp do wszystkich elementów określonego znacznika (np. p, div).</td>
+</tr>
+<tr>
+    <td><b>getElementsByName("nazwa")</b></td>
+    <td>Dostęp do wszystkich elementów o podanym atrybucie <b>name</b>.</td>
+</tr>
+</table>
+
+<h2>4.Omów właściwości innerHTML, innerText, className</h2>
+
+<h3><b><u>innerHTML</u></b></h3>
+Umożliwia wstawienie, odczyt lub zmianę kodu HTML wewnątrz elementu.
+
+<h3><b><u>innerText</u></b></h3>
+Wstawia zwykły tekst – nie interpretuje znaczników HTML.
+
+<h3><b><u>className</u></b></h3>
+Określa nazwę klasy CSS danego elementu, zmieniając jego wygląd.
+
+</body>
+</html>
+
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

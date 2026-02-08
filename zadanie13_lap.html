@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+    var m_lap = prompt("Podaj wartość m:", "");
+    var m = parseFloat(m_lap);
+    {
+        var ulamek1 = 1 / (m + 1);
+        var ulamek2 = 1 / (m * (m + 1));
+        document.write("<h3>Rozkład ułamka egipskiego na dwa ułamiki</h3>");
+        document.write("1/" + m + " = 1/" + (m + 1) + " + 1/" + (m * (m + 1)) + "<br><br>");       
+    }
+    function okno_zamknij() {
+        window.close();
+    }
+</script>
+<br>
+<input type="button" value="Zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
